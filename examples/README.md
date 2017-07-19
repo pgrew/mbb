@@ -1,10 +1,17 @@
 # Requirements
 
-https://github.com/cjlin1/libsvm
-Add the python folder inside the libSVM project to PYTHONPATH.
+The examples in this directory require the libsvm submodule.
 
-`export PYTHONPATH=/Users/mpettigrew/Code/libsvm/python`
+```bash
+# Clone recursively to ensure you get the libsvm submodule
+git clone --recursive https://github.com/pgrew/mbb.git
+
+cd mbb
+
+# Add libsvm python directory to PYTHONPATH
+export PYTHONPATH=$(pwd)/libsvm/python
+```
 
 ### Run Examples
 
-python simple_svm_classification.py
+`python simple_svm_classification.py`
