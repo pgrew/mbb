@@ -5,7 +5,13 @@ datasets by executing `make` in this directory. You can also download
 specific datasets by name, e.g.
 
 ```bash
-make covtype.libsvm.binary
+make covtype
+```
+
+To see the available datasets, use:
+
+```bash
+make help
 ```
 
 
