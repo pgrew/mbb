@@ -1,8 +1,8 @@
 all: svmTrain svmPredict
 
-svmTrain:
+SvmTrain:
 	chpl svmTrain.chpl
 
-svmPredict:
+SvmPredict:
 	chpl svmPredict.chpl
 
