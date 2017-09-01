@@ -5,24 +5,24 @@ use Documents;
 class PrimalDualIPM {
   // TODO: methods..
   /*
-  // Using Newton method to solve the optimization problem
-  //   parameter: the options of interior point method
-  //   h: ICF factorized matrix
-  //   doc: data points
-  //   model: store the optimization result
-  proc Solve(const PrimalDualIPMParameter& parameter,
-            const ParallelMatrix& h,
-            const Document& doc,
-            Model* model,
-            bool failsafe);
+  Using Newton method to solve the optimization problem
+    parameter: the options of interior point method
+    h: ICF factorized matrix
+    doc: data points
+    model: store the optimization result
+  */
+  proc Solve(parameter: PrimalDualIPMParameter, h: [], doc: Document,
+            model: Model, failsafe: bool) {
 
-  // Compute $HH^T\alpha$, which is part of $z$, $\alpha$ is primal variable
-  int ComputePartialZ(const ParallelMatrix& icf,
-                      const double *x,
-                      double to,
-                      int local_num_rows,
-                      double *z);
+  }
 
+  /* Compute $HH^T\alpha$, which is part of $z$, $\alpha$ is primal variable */
+  proc ComputePartialZ(icf: [], x: [] real, to: real, localNumRows: int,
+                      z: [] real) {
+
+  }
+
+  /*
   // Compute surrogate gap
   double ComputeSurrogateGap(double c_pos,
                              double c_neg,
