@@ -1,9 +1,11 @@
-use Document;
+use Documents;
 use Kernel;
 
 class Model {
-  /* kernel stores kernel type, kernel parameter information,
-     and calculates kernel function accordingly.*/
+  /*
+     kernel stores kernel type, kernel parameter information,
+     and calculates kernel function accordingly.
+   */
   var kernel: Kernel; // TODO
   /* The number of support vectors in all. */
   var numTotalSV: int,
@@ -18,11 +20,6 @@ class Model {
   /* Uses alpha values to decide which samples are support vectors and stores
      their information. */
   proc checkSupportVector(alpha, doc, ipmParameter) { }
-
-  proc supportVector() const ref { return this.supportVector; };
-
-  /* Setter/getter to kernel */
-  proc kernel() ref { return this.kernel; }
 
   // TODO
   /* Saves the model to the directory specified by str_directory. */
